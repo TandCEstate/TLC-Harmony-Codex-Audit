@@ -90,7 +90,9 @@ The scripts provided utilize the standard `h5py` and `scipy` libraries to perfor
 GWOSC 16kHz strain data. The background audit is conducted via randomized time-slides to establish the local noise floor of the O4b run.
 
 Technical Appendix: 
-Empirical Verification of the TLC-180 Signature. 
+
+Verification of the TLC-180 Signature. 
+
 
 Executive Summary:
 
@@ -106,20 +108,25 @@ Central Frequency: 180 Hz
 Optimal Burst Intervals: \(s_1 = 0.080\) s, \(s_2 = 0.197\) s
 Normalization: Zero-mean, unit-variance \((\mu=0, \sigma=1)\)3. 
 
+
 Statistical Methodology (The Discovery Audit)
+
 To satisfy the \(5\sigma\) discovery threshold, we implemented a robust Empirical Background Audit.
 A. Randomized Time-Slides 
 To distinguish the signal from instrumental "glitches" (blips/scatters), we performed 100,000 independent background 
 trials.
 
 Method: 
+
 We decoupled the Hanford (H1) and Livingston (L1) data streams and applied random time-offsets (slides) greater than the 
 light-travel time (10ms).
 
 Goal: 
+
 This creates a "Noise-Only" universe to determine how often random fluctuations can mimic the TLC-180 shape.
 
 B. Audit Results
+
 Trials Conducted: 
 100,000 Maximum Background 
 SNR Found: 
@@ -148,6 +155,8 @@ The tlc_audit_core.py script is provided to allow independent verification.
 Requirements:
 Python 3.xh5py, numpy, scipy
 Access to raw LVK O4b 16kHz Strain Data (via GWOSC)
+
+
 
 Technical FAQ: 
 
