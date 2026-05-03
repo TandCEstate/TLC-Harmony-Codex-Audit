@@ -81,7 +81,8 @@ GWOSC 16kHz strain data. The background audit is conducted via randomized time-s
 Technical Appendix: 
 Empirical Verification of the TLC-180 Signature. 
 
-Executive Summary
+Executive Summary:
+
 This repository contains the numerical evidence and algorithmic framework for the identification of a non-singular 
 gravitational anomaly within the LIGO-Virgo-KAGRA (LVK) O4b observing run. 
 The event, designated by the T.L.C. Harmony Codex as a "Harmony Pulse," was identified at GPS 1420879098.9972 with a 
