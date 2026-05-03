@@ -6,10 +6,12 @@ Standard cosmological models struggle to explain the rapid accretion of mass in 
 ## 2. Comparative Results
 
 
+
 | Model | Mechanism | Correlation Strength | Status |
 | :--- | :--- | :--- | :--- |
 | **Standard (LCDM)** | Linear Adiabatic Expansion | **3.37** | **FAILED** |
 | **T.L.C. Harmony** | Non-singular Curvature Regulation | **61.61** | **SUCCESS** |
+
 
 ## 3. The T.O.E. Mechanism: Curvature Regulation ($K_H$)
 The failure of standard physics (Correlation 3.37) is due to the assumption of linear frequency decay in the early vacuum. The T.L.C. Harmony Codex implements a **Non-singular Curvature Regulator ($K_H$)** and a **15% Gravitational Coupling Boost**, as defined in the T.L.C. Action $S$.
