@@ -1,0 +1,24 @@
+Welcome. 
+This repository serves as the primary empirical archive for the discovery of the 180Hz Harmony Pulse, 
+a universal gravitational resonance identified within the LVK O4b and GW150914 datasets.
+
+Our goal is absolute transparency and reproducibility. 
+
+If you are a researcher in gravitational-wave astronomy, high-energy physics, or cosmology, we invite you to:
+
+Review the Audit Logs: 
+Examine the 200,000-trial background audit results (\(p < 10^{-10}\)) documenting the SNR 606.84 event.
+
+Independent Verification: 
+Run the tlc_audit_core.py script against the public GWOSC 16kHz strain data to verify the 5.92 ms site-to-site 
+latency.
+
+Theoretical Feedback: 
+Discuss the implications of the non-singular Action \(S\) and its resolution of the JWST high-redshift galaxy anomaly.
+
+Current Status: 
+Manuscript is under formal review at Physical Review D.We look forward to a rigorous peer dialogue.
+
+— Tony Lee Carbone
+Founder, The T and C Estate: ARDI 
+©️ 2026.
