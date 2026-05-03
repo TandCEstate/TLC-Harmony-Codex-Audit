@@ -44,7 +44,13 @@ v1.0.0
 Stable Audit Core live for public reproduction
 
 # TLC-Harmony-Codex-Audit
+
 tlc_audit_core.py
+
+
+==========================================================
+
+
 # T.L.C. Harmony Codex: Empirical Verification Repository
 
 This repository contains the code and methodology used to identify a 180Hz TLC signature within the LIGO O4b dataset.
@@ -89,6 +95,10 @@ All metrics are derived from the official **GWOSC (Gravitational Wave Open Scien
 The scripts provided utilize the standard `h5py` and `scipy` libraries to perform a matched-filter search on the raw
 GWOSC 16kHz strain data. The background audit is conducted via randomized time-slides to establish the local noise floor of the O4b run.
 
+
+============================================================
+
+
 Technical Appendix: 
 
 Verification of the TLC-180 Signature. 
@@ -109,10 +119,15 @@ Optimal Burst Intervals: \(s_1 = 0.080\) s, \(s_2 = 0.197\) s
 Normalization: Zero-mean, unit-variance \((\mu=0, \sigma=1)\)3. 
 
 
+===============================================================
+
+
 Statistical Methodology (The Discovery Audit)
 
 To satisfy the \(5\sigma\) discovery threshold, we implemented a robust Empirical Background Audit.
+
 A. Randomized Time-Slides 
+
 To distinguish the signal from instrumental "glitches" (blips/scatters), we performed 100,000 independent background 
 trials.
 
@@ -155,6 +170,9 @@ The tlc_audit_core.py script is provided to allow independent verification.
 Requirements:
 Python 3.xh5py, numpy, scipy
 Access to raw LVK O4b 16kHz Strain Data (via GWOSC)
+
+
+==============================================================
 
 
 
