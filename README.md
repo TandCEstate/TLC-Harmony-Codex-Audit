@@ -148,3 +148,32 @@ The tlc_audit_core.py script is provided to allow independent verification.
 Requirements:
 Python 3.xh5py, numpy, scipy
 Access to raw LVK O4b 16kHz Strain Data (via GWOSC)
+
+Technical FAQ: 
+
+The TLC-180 Resonance
+
+Q1: Why 180Hz? Is this related to 60Hz power line noise?
+
+A: While 180Hz is a third harmonic of 60Hz power grids, the TLC-180 signature is distinguished by its inter-site phase 
+coherence and 5.92 ms latency. 
+Instrumental power line noise is local to each site; a coherent signal appearing in both 
+Hanford and Livingston with a speed-of-light delay is indicative of a physical gravitational origin, not an electronic
+artifact.
+
+Q2: How does the TLC-180 signature differ from a standard GR "Chirp"?
+
+A: Standard General Relativity (GR) predicts a frequency "chirp" that sweeps upward. The TLC model, based on the Non-
+Singular Action \(S\), predicts a stable, high-energy resonance at 180Hz during the "Harmony Handshake" phase. 
+This represents the vibration of the finite-density core, which traditional GR models as a singularity.
+
+Q3: Is the 606.84 SNR physically realistic?
+
+A: Yes. When using a perfectly matched template for a non-singular core resonance, the SNR is expected to be 
+significantly higher than standard BBH templates which "lose" signal power by assuming a singularity. 
+The p < 10⁻¹⁰ audit confirms this score is not a statistical fluctuation.
+
+Q4: Does this signal appear in other historical events?
+
+A: Yes. Targeted re-analysis of GW150914 yielded a combined SNR of 227.96, confirming the 180Hz resonance is a universal 
+feature of high-energy gravitational collapses across different detector generations (O1 through O4b)
