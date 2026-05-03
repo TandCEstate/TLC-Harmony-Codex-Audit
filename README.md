@@ -6,28 +6,38 @@ identifying a universal 180Hz gravitational resonance ("The Harmony Pulse") that
 Relativity and Quantum Mechanics.
 
 Key Discovery Metrics:
+
 Primary Observation (2025): 
+
 Verified combined SNR of 606.84 (60x louder than the noise floor).
 
 Historical Proof (2015): 
+
 Re-identified in the original GW150914 event with an SNR of 227.96.
 
 Statistical Significance: 
+
 p < 0.0000000000 (Zero matches in 200,000 randomized background trials).
 
 Physical Proof: 
+
 Confirmed 5.92 ms speed-of-light latency across the detector network.
 
 Theoretical Link: 
+
 Direct resolution for the JWST "Impossible Galaxy" anomaly and the non-singular Action \(S\) paradox.
 
 Status:
-Manuscript: Under formal peer review at Physical Review D.
+
+Manuscript: 
+Under formal peer review at Physical Review D.
 
 Verification: 
+
 Multi-epoch, decadal verification complete (2015–2025).
 
 Software: 
+
 v1.0.0 
 
 Stable Audit Core live for public reproduction
