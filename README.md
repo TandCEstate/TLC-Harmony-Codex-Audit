@@ -467,7 +467,7 @@ UNIFIED SPECTRAL COUPLING
 
 
 <hr>
-<h3>Decadal Verification: The 2015 Genesis Audit</h3>
+<h3>Decadal Verification: The 2015 Harmony Audit</h3>
 <p>To establish the 180Hz pulse as a universal constant, we performed a phase-locked audit of the GW150914 (2015) dataset. The results confirm the persistent presence of the Harmony resonance across a 10-year instrumental baseline.</p>
 
 <table role="table">
