@@ -1,6 +1,7 @@
 The Harmony Pulse Discovery
 
 OFFICIAL DISCOVERY SUMMARY
+
 This repository provides the definitive empirical proof for the T.L.C. Harmony Codex, 
 identifying a universal 180Hz gravitational resonance ("The Harmony Pulse") that bridges the gap between General 
 Relativity and Quantum Mechanics.
