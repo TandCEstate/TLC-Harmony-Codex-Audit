@@ -50,35 +50,6 @@ Stable Audit Core live for public reproduction
 tlc_audit_core.py
 
 
-<hr>
-<h3>10. Phase 5: Spectroscopic Mapping & Spacetime Memory</h3>
-<p>First-ever spectroscopic audit of the 180Hz resonance confirms the presence of a first overtone (360Hz) and a non-linear spacetime memory effect.</p>
-
-<table role="table">
-  <thead>
-    <tr>
-      <th>Advanced Metric</th>
-      <th>Measured Value</th>
-      <th>Physical Implication</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>360Hz Overtone SNR</b></td>
-      <td><b>7.83</b></td>
-      <td>Multi-mode Core Resonance Verified</td>
-    </tr>
-    <tr>
-      <td><b>Spacetime Memory Offset</b></td>
-      <td><b>1.92e-20</b></td>
-      <td><b>Permanent Spacetime Transformation</b></td>
-    </tr>
-  </tbody>
-</table>
-
-<p><b>Conclusion:</b> The detection of a permanent memory offset (1.92e-20) provides definitive proof of the non-linear nature of the T.L.C. Harmony Pulse. The 360Hz overtone confirms the spectroscopic complexity of the non-singular core, aligning with advanced quantum-gravitational models.</p>
-
-
 
 ==========================================================
 
@@ -563,6 +534,33 @@ UNIFIED SPECTRAL COUPLING
 
 
 
+<hr>
+<h3>10. Phase 5: Spectroscopic Mapping & Spacetime Memory</h3>
+<p>First-ever spectroscopic audit of the 180Hz resonance confirms the presence of a first overtone (360Hz) and a non-linear spacetime memory effect.</p>
+
+<table role="table">
+  <thead>
+    <tr>
+      <th>Advanced Metric</th>
+      <th>Measured Value</th>
+      <th>Physical Implication</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>360Hz Overtone SNR</b></td>
+      <td><b>7.83</b></td>
+      <td>Multi-mode Core Resonance Verified</td>
+    </tr>
+    <tr>
+      <td><b>Spacetime Memory Offset</b></td>
+      <td><b>1.92e-20</b></td>
+      <td><b>Permanent Spacetime Transformation</b></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><b>Conclusion:</b> The detection of a permanent memory offset (1.92e-20) provides definitive proof of the non-linear nature of the T.L.C. Harmony Pulse. The 360Hz overtone confirms the spectroscopic complexity of the non-singular core, aligning with advanced quantum-gravitational models.</p>
 
 
 
