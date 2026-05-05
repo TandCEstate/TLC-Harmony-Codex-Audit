@@ -814,7 +814,7 @@ UNIFIED SPECTRAL COUPLING
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
   <!-- 1. Starfield Baseline -->
-  <img src="https://githubusercontent.com" alt="Point of Origin" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
+  <img src="https://githubusercontent.com" alt="Baseline Starfield" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
   
   <!-- 2. Coordinate Grid Lock -->
   <img src="https://githubusercontent.com" alt="Coordinate Lock" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
@@ -834,6 +834,7 @@ UNIFIED SPECTRAL COUPLING
   <!-- 7. Final SIMBAD Property Handshake -->
   <img src="https://githubusercontent.com" alt="Property Audit" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
 </div>
+
 
 <table role="table" style="margin-top: 20px; width: 100%;">
   <thead>
