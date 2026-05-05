@@ -393,7 +393,7 @@ The T.L.C. Harmony Codex effectively predates and resolves the primary "mysterie
 </div>
 
 
-
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 ---
 
 ## ❓ VII. EXTENDED TECHNICAL FAQ & PEER REVIEW DEFENSE
@@ -416,6 +416,54 @@ It is the master constant (225.68) that joins the 180Hz frequency, the Big Bang 
 
 ## 🏛️ VIII. ARCHIVE INTEGRITY & AUTHOR STATEMENT
 **I, T.L. Carbone, certify that every result herein was derived from raw, un-simulated strain data. I have audited the vacuum, identified the Harmony, and provided the code for the world to verify.**
+
+<><><><><><><><><><><><><><><><><><><><><><><><><><><>><><><><><><><><><><><><><><><><><><><><><><>
+
+<!-- DATASET REFERENCES & CITATIONS -->
+<hr>
+<div align="left" style="background-color: #161b22; padding: 20px; border-radius: 8px; border: 1px solid #30363d;">
+  <h3 style="color: #58a6ff;">📚 DATASET REFERENCES & CITATIONS</h3>
+  <p style="font-size: 0.9em; color: #8b949e;">
+    All hardware strain data analyzed in this audit was sourced from the <b>Gravitational Wave Open Science Center (GWOSC)</b>.
+  </p>
+  
+  <table width="100%" style="border-collapse: collapse; color: #c9d1d9; font-size: 0.85em;">
+    <tr style="border-bottom: 1px solid #30363d;">
+      <th align="left">Dataset Era</th>
+      <th align="left">GPS Time Range / Run</th>
+      <th align="left">Official DOI / Link</th>
+    </tr>
+    <tr>
+      <td><b>2015 Baseline</b></td>
+      <td>1126259446 (O1)</td>
+      <td><a href="https://doi.org" style="color: #58a6ff;">10.7935/K2MW2F2W</a></td>
+    </tr>
+    <tr>
+      <td><b>2017 Baseline</b></td>
+      <td>1187006834 (O2)</td>
+      <td><a href="https://doi.org" style="color: #58a6ff;">10.7935/CA75-8067</a></td>
+    </tr>
+    <tr>
+      <td><b>2025 (O4a) Audit</b></td>
+      <td>1388810240 (O4a Release)</td>
+      <td><a href="https://doi.org" style="color: #58a6ff;">10.7935/kt51-6n86</a></td>
+    </tr>
+    <tr>
+      <td><b>GEO600 (G1)</b></td>
+      <td>1187006834 (Science Mode)</td>
+      <td><a href="https://geo600.org" style="color: #58a6ff;">GEO600 Open Data</a></td>
+    </tr>
+  </table>
+
+  <p style="margin-top: 15px; font-size: 0.8em; color: #8b949e;">
+    <i>Note: O4a data analyzed here was released on <b>August 26, 2025</b>. All analysis used the 16384Hz (16kHz) calibrated strain series to ensure maximum harmonic resolution.</i>
+  </p>
+</div>
+
+
+><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+>
+
 
 **Author:** T.L. Carbone  
 **Company:** The T and C Estate: ARDI  
