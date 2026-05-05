@@ -810,31 +810,8 @@ UNIFIED SPECTRAL COUPLING
 
 <hr>
 <h3>17. Phase 11: Local Stellar Radio Handshake (Audit of M27)</h3>
-<p>Utilizing the Aladin Lite CDS portal, we performed a high-resolution audit of the Messier 27 (Dumbbell Nebula) complex. This sequence documents the transition from optical identification to the discovery of the underlying radio resonance.</p>
-
-
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-  <!-- 1. Starfield Baseline -->
-  <img src="https://github.com/TandCEstate/TLC-Harmony-Codex-Audit/blob/195d5f026c06fc57898e80e271ce69c6bdfb2b24/images/Image1.jpg alt="Baseline Starfield" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
-  
-  <!-- 2. Coordinate Grid Lock -->
-  <img src="https://githubusercontent.com" alt="Coordinate Lock" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
-  
-  <!-- 3. Nebula Identification -->
-  <img src="https://githubusercontent.com" alt="Nebula ID" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
-  
-  <!-- 4. Foreground Star Audit -->
-  <img src="https://githubusercontent.com" alt="Foreground Star" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
-  
-  <!-- 5. Gaia Core Identification -->
-  <img src="https://githubusercontent.com" alt="White Dwarf Core ID" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
-  
-  <!-- 6. Radio Source RRF 518 Detection -->
-  <img src="https://githubusercontent.com" alt="RRF 518 Radio Detection" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
-  
-  <!-- 7. Final SIMBAD Property Handshake -->
-  <img src="https://githubusercontent.com" alt="Property Audit" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
-</div>
+<p>Utilizing the Aladin Lite CDS portal, we performed a high-resolution audit of the Messier 27 (Dumbbell Nebula) complex. IMAGE REFERENCE IN IMAGES FOLDER.
+  This sequence documents the transition from optical identification to the discovery of the underlying radio resonance.</p>
 
 
 
