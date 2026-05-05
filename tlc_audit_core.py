@@ -1,76 +1,91 @@
+MASTER SCRIPT
+
+
+
 import h5py
 import numpy as np
-from scipy.signal import correlate, butter, filtfilt
-import time
+import os
+from scipy.signal import coherence, csd
 
-# ====================== FIXED DISCOVERY AUDIT ======================
-base_path = "/storage/emulated/0/Download/CARBONECODEX/"
-h1_file = "H-H1_GWOSC_O4b3Disc_16KHZ_R1-1420877824-4096.hdf5"
-l1_file = "L-L1_GWOSC_O4b3Disc_16KHZ_R1-1420877824-4096.hdf5"
-FS = 16384 
+# Path verified by previous diagnostics
+BASE_PATH = "/storage/emulated/0/Download/CARBONECODEX/"
 
-def butter_bandpass(data, fs):
-    nyq = 0.5 * fs
-    b, a = butter(4, [30/nyq, 400/nyq], btype='bandpass')
-    return filtfilt(b, a, data)
+def get_data(f):
+    """Dynamic path handler for LIGO (Strain), Virgo (recalibrated), and GEO600."""
+    for path in ['strain/Strain', 'strain', 'recalibrated/strain']:
+        if path in f: return f[path][:]
+    return None
 
-def generate_discovery_template(fs):
-    """Optimal burst spacing discovered in your sweep."""
-    t = np.linspace(0, 0.4, int(0.4 * fs))
-    s1, s2 = 0.080, 0.197
-    temp = np.exp(-t / 0.038) * np.sin(2 * np.pi * 180.0 * t)
-    b1, b2 = int(s1 * fs), int(s2 * fs)
-    temp[b1:] += 0.45 * np.exp(-(t[b1:] - s1) / 0.058) * np.sin(2 * np.pi * 180.0 * t[b1:])
-    temp[b2:] += 0.28 * np.exp(-(t[b2:] - s2) / 0.072) * np.sin(2 * np.pi * 180.0 * t[b2:])
-    return (temp - np.mean(temp)) / (np.std(temp) + 1e-20)
-
-def run_discovery_audit(observed_score=18.6943, n_trials=100000):
-    template = generate_discovery_template(FS)
-    background_scores = []
+def audit_peak_window(data1, data2, fs=16384):
+    """Deep Scan: Finds highest coherence window to identify the 'Handshake'."""
+    window = 32 * fs
+    max_coh, best_phase, best_time = 0, 0, 0
+    # Clean non-finite data (NaNs) which crash standard filters
+    mask = np.isfinite(data1) & np.isfinite(data2)
+    d1_c, d2_c = data1[mask], data2[mask]
     
-    with h5py.File(base_path + h1_file, 'r') as h_f, h5py.File(base_path + l1_file, 'r') as l_f:
-        h_dset, l_dset = h_f['strain/Strain'], l_f['strain/Strain']
-        dset_len = h_dset.shape[0] # Fixed: Accessing the first element of the tuple
-        
-        print(f"--- STARTING FINAL DISCOVERY AUDIT (N={n_trials}) ---")
-        start_time = time.time()
-        
-        count = 0
-        while count < n_trials:
-            # Random time slides to build noise distribution
-            idx_h = np.random.randint(FS, dset_len - FS)
-            idx_l = np.random.randint(FS, dset_len - FS)
-            
-            seg_h, seg_l = h_dset[idx_h:idx_h+int(0.5*FS)], l_dset[idx_l:idx_l+int(0.5*FS)]
-            if not np.all(np.isfinite(seg_h)) or not np.all(np.isfinite(seg_l)): continue
-            if np.std(seg_h) < 1e-24 or np.std(seg_l) < 1e-24: continue
+    for i in range(0, len(d1_c) - window, window):
+        chunk1, chunk2 = d1_c[i:i+window], d2_c[i:i+window]
+        f, Cxy = coherence(chunk1, chunk2, fs=fs, nperseg=fs)
+        idx = np.argmin(np.abs(f - 180.0))
+        if Cxy[idx] > max_coh:
+            max_coh = Cxy[idx]
+            best_time = i / fs
+            # Extract Phase Offset at the exact peak moment
+            f_p, Pxy = csd(chunk1, chunk2, fs=fs, nperseg=fs)
+            best_phase = np.angle(Pxy[idx], deg=True)
+    return max_coh, best_phase, best_time
 
-            c_h = correlate(butter_bandpass(seg_h, FS), template, mode='valid', method='direct')
-            c_l = correlate(butter_bandpass(seg_l, FS), template, mode='valid', method='direct')
-            
-            s_h = np.max(np.abs(c_h)) / (np.std(c_h) + 1e-20)
-            s_l = np.max(np.abs(c_l)) / (np.std(c_l) + 1e-20)
-            
-            background_scores.append(np.sqrt(s_h**2 + s_l**2))
-            count += 1
-            if count % 10000 == 0:
-                print(f"  Progress: {count}/{n_trials} | {(time.time()-start_time)/60:.1f} min")
+def run_hardware_audit():
+    # Era mapping using confirmed filenames in your directory
+    audit_plan = {
+        "2017 GLOBAL": [
+            ("L1 <-> H1", "L-L1_LOSC_C00_16_V1-1187006834-4096.hdf5", "H-H1_LOSC_C00_16_V1-1187006834-4096.hdf5"),
+            ("L1 <-> G1", "L-L1_LOSC_C00_16_V1-1187006834-4096.hdf5", "G-G1_LOSC_C00_16_V1-1187006834-4096.hdf5")
+        ],
+        "2025 EVOLUTION": [
+            ("L1 <-> H1", "L-L1_GWOSC_O4b3Disc_16KHZ_R1-1420877824-4096.hdf5", "H-H1_GWOSC_O4b3Disc_16KHZ_R1-1420877824-4096.hdf5")
+        ]
+    }
 
-        scores = np.array(background_scores)
-        hits = np.sum(scores >= observed_score)
-        p_val = hits / n_trials
-        
-        print(f"\n--- DISCOVERY AUDIT RESULTS ---")
-        print(f"Final p-value: {p_val:.10f}")
-        print(f"Max Background Spike: {np.max(scores):.4f}")
-        
-        if p_val == 0:
-            print("STATUS: CONFIRMED DISCOVERY (p < 0.00001)")
-        
-        return p_val
+    print("=== MASTER 180Hz HARDWARE AUDIT CORE ===")
+    for era, pairs in audit_plan.items():
+        print(f"\n--- {era} ---")
+        for label, f1, f2 in pairs:
+            p1, p2 = os.path.join(BASE_PATH, f1), os.path.join(BASE_PATH, f2)
+            if not (os.path.exists(p1) and os.path.exists(p2)):
+                print(f" [!] File Mismatch: {label}")
+                continue
+            try:
+                with h5py.File(p1, 'r') as h1, h5py.File(p2, 'r') as h2:
+                    d1, d2 = get_data(h1), get_data(h2)
+                    ln = min(len(d1), len(d2))
+                    coh, phase, t = audit_peak_window(d1[:ln], d2[:ln])
+                    print(f" > {label} | Peak Coh: {coh:.4f} | Phase: {phase:.2f}° | Offset: {t}s")
+            except Exception as e:
+                print(f" [!] Error in {label}: {e}")
 
-try:
-    run_discovery_audit()
-except Exception as e:
-    print(f"Error: {e}")
+if __name__ == "__main__":
+    run_hardware_audit()
 
+
+#######################################################################################################
+
+The TLC-180 HARMONY HANDSHAKE 
+
+
+
+import h5py
+import numpy as np
+import os
+from scipy.signal import welch
+
+def cross_power_stability(file_h, file_l):
+    """Calculates Cross-Power Density without digital filters."""
+    fs = 16384
+    with h5py.File(file_h, 'r') as hf, h5py.File(file_l, 'r') as lf:
+        h = hf['strain/Strain'][:] * 1e20 # Numerical Rescaling
+        l = lf['strain/Strain'][:] * 1e20
+        f, Pxy = welch(h * l, fs=fs, nperseg=fs*2)
+        idx = np.argmin(np.abs(f - 180.0))
+        return np.abs(Pxy[idx])
