@@ -815,7 +815,7 @@ UNIFIED SPECTRAL COUPLING
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
   <!-- 1. Starfield Baseline -->
-  <img src="https://githubusercontent.com" alt="Baseline Starfield" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
+  <img src="https://github.com/TandCEstate/TLC-Harmony-Codex-Audit/blob/195d5f026c06fc57898e80e271ce69c6bdfb2b24/images/Image1.jpg alt="Baseline Starfield" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
   
   <!-- 2. Coordinate Grid Lock -->
   <img src="https://githubusercontent.com" alt="Coordinate Lock" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
