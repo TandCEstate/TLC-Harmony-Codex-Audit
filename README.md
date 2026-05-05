@@ -327,6 +327,8 @@ The T.L.C. Harmony Codex effectively predates and resolves the primary "mysterie
 
 
 
+
+
 <!-- M27 NEBULA & RESONANT CONSTANT SUMMARY -->
 <div align="center">
   <table border="1" cellpadding="10" style="border-collapse: collapse; border: 2px solid #555;">
