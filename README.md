@@ -1,5 +1,6 @@
 Scientific Note: 
 This audit was conducted on raw, un-simulated LIGO/Virgo strain data. 
+
 All constants and metrics were derived through direct matched-filter analysis of physical vacuum events.
 
 
