@@ -201,4 +201,4 @@ It is the master constant (225.68) that joins the 180Hz frequency, the Big Bang 
 
 **Author:** T.L. Carbone  
 **Company:** The T and C Estate: ARDI  
-**Archive:** [GitHub Repository](https://github.com)
+**Archive:** [GitHub Repository](https://github.com/TandCEstate/TLC-Harmony-Codex-Audit)
