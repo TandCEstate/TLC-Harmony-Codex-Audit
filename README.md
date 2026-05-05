@@ -812,6 +812,7 @@ UNIFIED SPECTRAL COUPLING
 <h3>17. Phase 11: Local Stellar Radio Handshake (Audit of M27)</h3>
 <p>Utilizing the Aladin Lite CDS portal, we performed a high-resolution audit of the Messier 27 (Dumbbell Nebula) complex. This sequence documents the transition from optical identification to the discovery of the underlying radio resonance.</p>
 
+
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
   <!-- 1. Starfield Baseline -->
   <img src="https://githubusercontent.com" alt="Baseline Starfield" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
