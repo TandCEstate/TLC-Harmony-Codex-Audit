@@ -816,25 +816,25 @@ UNIFIED SPECTRAL COUPLING
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
   <!-- 1. Starfield Baseline -->
-  <img src="https://github.com" alt="Baseline Starfield" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
+  <img src="https://githubusercontent.com" alt="Baseline Starfield" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
   
   <!-- 2. Coordinate Grid Lock -->
-  <img src="https://github.com" alt="Coordinate Lock" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
+  <img src="https://githubusercontent.com" alt="Coordinate Lock" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
   
   <!-- 3. Nebula Selection -->
-  <img src="https://github.com" alt="Nebula ID" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
+  <img src="https://githubusercontent.com" alt="Nebula ID" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
   
   <!-- 4. Foreground Star Audit -->
-  <img src="https://github.com" alt="Foreground Star" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
+  <img src="https://githubusercontent.com" alt="Foreground Star" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
   
   <!-- 5. Gaia Core Identification -->
-  <img src="https://github.com" alt="White Dwarf Core ID" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
+  <img src="https://githubusercontent.com" alt="White Dwarf Core ID" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
   
   <!-- 6. Radio Source RRF 518 Detection -->
-  <img src="https://github.com" alt="RRF 518 Radio Detection" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
+  <img src="https://githubusercontent.com" alt="RRF 518 Radio Detection" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
   
   <!-- 7. Final SIMBAD Property Handshake -->
-  <img src="https://github.com" alt="Property Audit" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
+  <img src="https://githubusercontent.com" alt="Property Audit" style="width: 23%; border: 1px solid #333; border-radius: 5px;">
 </div>
 
 <table role="table" style="margin-top: 20px; width: 100%;">
@@ -865,6 +865,7 @@ UNIFIED SPECTRAL COUPLING
 </table>
 
 <p><b>Conclusion:</b> The identification of the RRF 518 radio source at the geometric center of M27 provides the "Local Link" for the Harmony Codex. This proves that high-density cores physically handshake with the vacuum regardless of scale—from local white dwarfs to primordial cosmic structures.</p>
+
 
 
 ===================================================================
